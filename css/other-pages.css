@@ -1,0 +1,278 @@
+.body-container3 {
+    display: grid;
+    grid-template-rows: repeat(4, min-content);
+}
+
+.main2 {
+    display: grid;
+    grid-template-rows: 15rem minmax(75vh, 1fr);
+    background-color: rgba(255, 166, 0, 0.9);
+}
+
+.description-container2 {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-container2 > h2 {
+    font-size: 3rem;
+    font-family: 'Commissioner', sans-serif;
+    margin-bottom: 1.5rem;
+    padding: 0 1.2rem;
+}
+
+.description-container2 > h3 {
+    font-size: 2.5rem;
+    font-family: 'Lato', sans-serif;
+    margin: 1.5rem 0;
+    padding: 0 1.2rem;
+}
+
+.description-container2 > h4 {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 1.2rem;
+    margin:  0 0 1.5rem 0;
+}
+
+.contact-form, .faq-form {
+    width: 60%;
+    height: 96%;
+    border-radius: 1rem;
+    background-color: white;
+    justify-self: center;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media only screen and (min-height: 900px) {
+    .contact-form, .faq-form {
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-form, .faq-form {
+        width: 100%;
+    }
+}
+
+.contact-form h3, .faq-form h3 {
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.contact-form  label {
+    font-size: 1.5rem;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: .6rem 1.2rem;
+    width: 50%;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline-style: none;
+    border: 2px solid orange;
+}
+
+.contact-form button {
+    padding: 1.2rem 2.1rem;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 1rem;
+    transition: all .2s;
+}
+
+.contact-form button:hover {
+    background-color: orange;
+    color: white;
+}
+
+.faq-form {
+    align-items: baseline;
+}
+
+.faq-container {
+    margin: 0 4.5rem;
+}
+
+.faq-container h2 {
+    font-size: 2.7rem;
+    margin-bottom: 1.2rem;
+    background-color: rgba(128, 128, 128, 0.123);
+    cursor: pointer;
+    padding: .6rem;
+}
+
+.faq-container p {
+    font-size: 1.8rem;
+}
+
+.faq-form h3 {
+    margin: 0 4.5rem;
+}
+
+.main3 {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    background-color: orange;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-self: center;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+    padding: 6rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .posts {
+        padding: 1.2rem;
+    }
+}
+
+@media only screen and (min-height: 1000px) {
+    .posts {
+        height: 75vh;
+    }
+}
+
+.posts h1 {
+    font-size: 3.6rem;
+}
+
+.post {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    display: grid;
+    align-items: end;
+}
+
+#post1 {
+    background-image: url('../images/martian.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#post1 h2 {
+    background-color: whitesmoke;
+    padding: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 6rem;
+    padding-bottom: 30rem;
+    width: 100%;
+    height: max-content;
+    justify-self: center;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+}
+
+.article h1 {
+    font-size: 4.5rem;
+    width: 50vw;
+}
+
+@media only screen and (max-width: 900px) {
+    .article h1 {
+        width: 75%;
+    }
+}
+
+.article img {
+    width: 60rem;
+    height: 40rem;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .article img {
+        width: 80vw;
+        height: 60vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .article img {
+        width: 90vw;
+        height: 70vw;
+    }
+}
+
+.article p {
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+}
+
+.main3 button {
+    position: fixed;
+    z-index: 3;
+    padding: 1.5rem 2.1rem;
+    margin-left: 1.2rem;
+    font-size: 2.4rem;
+    cursor: pointer;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .main3 button {
+        margin-left: 0;
+        background-color: transparent;
+        transition: all .2s;
+    }
+}
+
+.main3 button:hover {
+    background-color: orange;
+    color: white;
+}
+
+#lorem {
+    font-size: 2.4rem;
+    width: 50%;
+    margin-top: 3rem;
+    text-indent: 3rem;
+}
+
+@media only screen and (max-width: 900px) {
+    #lorem {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #lorem {
+        width: 90vw;
+    }
+}

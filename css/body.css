@@ -1,0 +1,266 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: end;
+
+    width: 100vw;
+    background-image: url('../images/jr-korpa-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 21rem 1fr;
+        justify-items: center;
+    }
+}
+
+.description-container {
+    align-self: start;
+    justify-self: baseline;
+    color: white;
+    background-color: orange;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .description-container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.description-container > h2 {
+    font-size: 3rem;
+    font-family: 'Commissioner', sans-serif;
+    margin-bottom: 1.5rem;
+    padding: 0 1.2rem;
+}
+
+.description-container > h3 {
+    font-size: 2.5rem;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1.5rem;
+    padding: 0 1.2rem;
+}
+
+.description-container > h4 {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 1.2rem;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 6rem;
+    background-color: white;
+    width: 30rem;
+    height: 39rem;
+    border-radius: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .signup-container {
+        margin-right: 0;
+    }
+}
+
+.signup-text {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+}
+
+.input2 {
+    margin-top: 2.1rem;
+    margin-left: 1.5rem;
+    width: 90%;
+    padding: 1.5rem 2.1rem;
+    font-family: 'Raleway', sans-serif;
+    transition: all .2s;
+}
+
+.input2:focus {
+    outline-style: none;
+    border: 1px solid orange;
+}
+
+.button-container {
+    margin-top: 2.1rem;
+    margin-left: 1.5rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.signup-button {
+    padding: 1.2rem 2.1rem;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 1rem;
+    transition: all .2s;
+}
+
+.signup-button:hover {
+    background-color: orange;
+    color: white;
+}
+
+.button-container > p {
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.button-container > p > span {
+    color: orange;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.button-container > p > span:hover {
+    text-decoration: underline;
+}
+
+.books-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 60rem;
+}
+
+.books-text {
+    font-size: 4.5rem;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+@media only screen and (max-width: 900px) {
+    .books-text {
+        padding-left: 3rem;
+    }
+}
+
+.main-container {
+    width: 85rem;
+    height: 60rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .main-container {
+        width: 72vw;
+        height: 45rem;
+    }
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30rem;
+    height: 45rem;
+    box-shadow: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 .6rem rgba(0, 0, 0, .6);
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+    .swiper-slide {
+        width: 20rem;
+        height: 30rem;
+        background-size: contain;
+    }
+}
+
+
+
+#img1 {
+    background-image: url('../images/possible-worlds.jpg');
+}
+
+#img2 {
+    background-image: url('../images/the-martian.jpg');
+}
+
+#img3 {
+    background-image: url('../images/future-humanity.jpg');
+}
+
+#img4 {
+    background-image: url('../images/singularity-trap.jpg');
+}
+
+#img5 {
+    background-image: url('../images/brief-answers.jpg');
+}
+
+#img6 {
+    background-image: url('../images/astrophysics-hurry.jpg');
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    width: 100vw;
+    height: 57rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .info-container {
+        height: 100%;
+    }
+}
+
+
+.info-text {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    width: 78%;
+    font-size: 3rem;
+    line-height: 6rem;
+    text-indent: 6rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .info-text {
+        font-size: 2.1rem;
+        line-height: 4.5rem;
+        width: 90%;
+        text-indent: 1.5rem;
+    }
+}
+
+.info-text > span {
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 900;
+    font-size: 4.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .info-text > span {
+        font-size: 2.4rem;
+    }
+}

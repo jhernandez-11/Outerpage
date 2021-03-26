@@ -1,0 +1,228 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: .21rem;
+}
+
+fonts {
+    font-family: 'Commissioner', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.body-container {
+    display: grid;
+    grid-template-rows: repeat(2, min-content) 93vh min-content 60rem min-content;
+}
+
+@media only screen and (max-width: 900px) {
+    .body-container {
+        grid-template-rows: repeat(2, min-content) 120vh min-content 60rem min-content;
+    }
+}
+
+@media only screen and (max-height: 640px) {
+    .body-container {
+        grid-template-rows: repeat(2, min-content) 120vh min-content 60rem min-content;
+    }
+}
+
+@media only screen and (min-height: 900px) {
+    .body-container {
+        grid-template-rows: repeat(2, min-content) 60vh min-content 60rem min-content;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 .6rem rgba(0, 0, 0, .6);
+
+    position: relative;
+    height: 6rem;
+    width: 100vw;
+}
+
+@media only screen and (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        align-items: baseline;
+        height: 12rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        height: max-content;
+    }
+}
+
+.header-title {
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .header-title {
+        margin: 1.5rem;
+        font-size: 3.6rem;
+    }
+}
+.nav {
+    display: flex;
+
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        font-size: 2.4rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .nav {
+        margin-left: 1.5rem;
+    }
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+
+    margin-right: 3rem;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .link-container {
+        padding: 1.2rem 0;
+    }
+}
+
+.link-container:hover {
+    cursor: pointer;
+}
+
+.header-link {
+    margin-right: 1rem;
+}
+
+.header-icon {
+    padding-left: 1.5rem;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    margin-left: 3rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 2.4rem;
+    height: 2.4rem;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: .21rem;
+
+    transition: all .3s;
+}
+
+@media only screen and (max-width: 600px) {
+    .input {
+        margin: 1.5rem;
+    }
+}
+
+.input:focus {
+    outline: none;
+    border: 2px solid orange;
+}
+
+.search-icon {
+    font-size: 1.5rem;
+    transform: translateX(-2.4rem) translateY(-.1rem);
+}
+
+@media only screen and (max-width: 600px) {
+    .search-icon {
+        transform: translateX(-4.2rem) translateY(0rem);
+    }
+}
+
+.search-icon:hover {
+    cursor: pointer;
+}
+
+.menus {
+    height: 0;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 3rem 12rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-container {
+        margin: 2.1rem 1.5rem;
+    }
+}
+
+.menu-link {
+    font-size: 1.5rem;
+    transition: all .2s;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-link {
+        font-size: 1.8rem;
+    }
+}
+
+.menu-link:hover {
+    color: orange;
+    transform: scale(1.02);
+}
+
+#nav-icon {
+    position: absolute;
+    font-size: 5.4rem;
+    transform: translateX(-.6rem);
+    margin-top: 1.2rem;
+    right: 0;
+    color: grey;
+    transition: all .2s;
+}
+
+#nav-icon:hover {
+    cursor: pointer;
+    color: black;
+}
